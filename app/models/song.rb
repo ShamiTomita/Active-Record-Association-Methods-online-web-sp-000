@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
         drake.save
         self.artist = drake
       else 
-        self.update(artist: "Drake") 
+        self.artist = drake
     end
   end
 end
