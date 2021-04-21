@@ -13,7 +13,7 @@ class Song < ActiveRecord::Base
     if Artist.include?("Drake")
       self.artist = "Drake"
     else 
-      Artist.new("Drake")
+      drake = Artist.new(name: "Drake")
       self.artist = "Drake"
     end 
   end
